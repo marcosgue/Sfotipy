@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"json",
+				"json_data	statement"
+			],
+			[
+				"du",
+				"dumps	function"
+			],
+			[
+				"get",
+				"get_object_or_404	function"
+			],
+			[
+				"track",
+				"track_view"
+			],
+			[
+				"vi",
+				"views"
+			],
+			[
+				"Album",
+				"albums"
+			],
+			[
+				"art",
+				"artists"
+			],
+			[
 				"max",
 				"max_length"
 			],
@@ -15,38 +43,23 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "Sfotipy/settings.py",
-			"settings":
-			{
-				"buffer_size": 2105,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "from django.db import models\n\n\nclass Track(models.Model):\n    track = models.CharField(max_length=255)\n    order = models.PositiveIntegerField()\n    track_file = models.FileField(upload_to='tracks')\n",
-			"file": "tracks/models.py",
-			"file_size": 57,
-			"file_write_time": 130590702180000000,
-			"settings":
-			{
-				"buffer_size": 199,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 258.0,
+		"height": 347.0,
 		"selected_items":
 		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
 			[
 				"packa",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 449.0
+		"width": 602.0
 	},
 	"console":
 	{
@@ -71,10 +84,22 @@
 		"/Library/WebServer/www/Sfotipy/Sfotipy/albums",
 		"/Library/WebServer/www/Sfotipy/Sfotipy/artists",
 		"/Library/WebServer/www/Sfotipy/Sfotipy/Sfotipy",
-		"/Library/WebServer/www/Sfotipy/Sfotipy/tracks"
+		"/Library/WebServer/www/Sfotipy/Sfotipy/tracks",
+		"/Library/WebServer/www/Sfotipy/Sfotipy/tracks/migrations",
+		"/Library/WebServer/www/Sfotipy/Sfotipy/tracks/templates"
 	],
 	"file_history":
 	[
+		"/Library/WebServer/www/Sfotipy/Sfotipy/Sfotipy/urls.py",
+		"/Library/WebServer/www/Sfotipy/Sfotipy/tracks/templates/track.html",
+		"/Library/WebServer/www/Sfotipy/Sfotipy/tracks/views.py",
+		"/Library/WebServer/www/Sfotipy/Sfotipy/Sfotipy/settings.py",
+		"/Library/WebServer/www/Sfotipy/Sfotipy/tracks/models.py",
+		"/Library/WebServer/www/Sfotipy/Sfotipy/artists/models.py",
+		"/Library/WebServer/www/Sfotipy/Sfotipy/albums/models.py",
+		"/Library/WebServer/www/Sfotipy/Sfotipy/artists/admin.py",
+		"/Library/WebServer/www/Sfotipy/Sfotipy/albums/admin.py",
+		"/Library/WebServer/www/Sfotipy/Sfotipy/tracks/admin.py",
 		"/Library/WebServer/www/phpmyadmin/config.inc.php",
 		"/tmp/mysql.sock",
 		"/Library/WebServer/www/phpmyadmin/config.inc_MAC.php",
@@ -119,275 +144,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Sfotipy/settings.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2105,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1612,
-								1612
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 604.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "tracks/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 199,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								198,
-								198
-							]
-						],
-						"settings":
-						{
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"Mason",
-								"XBL",
-								"XUL",
-								"RHTML",
-								"SCSS",
-								"Python",
-								"HTML",
-								"Ruby",
-								"Python3",
-								"XML",
-								"Sass",
-								"XSLT",
-								"Django",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"Twig",
-								"Less",
-								"Smarty",
-								"Node.js",
-								"Tcl",
-								"TemplateToolkit",
-								"PHP"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"PyWin32",
-								"jQuery",
-								"Rails"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"codeintel_tooltips": "popup",
-							"sublime_auto_complete": true,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -397,7 +155,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{

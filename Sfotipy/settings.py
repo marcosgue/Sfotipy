@@ -40,6 +40,9 @@ INSTALLED_APPS = (
     'tracks',
     'albums',
     'artists',
+    'userprofiles',
+    'mockups',
+    'django_extensions',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -88,3 +91,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.sep.join(os.path.abspath(__file__).split(os.sep)[:-2] + ['media'])
+MEDIA_URL = '/media/'
+
+# Backends
+AUTHENTICATION_BACKENDS = (
+    'userprofiles.backends.EmailBackend',
+)
